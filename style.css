@@ -1,0 +1,210 @@
+body {
+     /*Отступ*/
+    margin:0;
+     /*Шрифт*/
+     font-family: 'Montserrat', sans-serif;
+     /*Размер текста*/
+    font-size: 15px;
+    /*Межстрочный отстсуп*/
+    line-height: 1.6;
+    color: #333;
+    
+}
+
+
+*,
+*:before
+*:after 
+
+{
+ /*Размер блока*/
+box-sizing: border-box;
+}
+ /*Всем заголовкам задает margin 0*/
+h1, h2, h3, h4, h5, h6
+{
+  margin: 0;
+}
+
+/*контейнер*/
+.container 
+{
+     /*Ширина*/
+   width: 100%;
+   max-width: 1200px;
+    /*Выравнивает по центру*/
+   margin: 0 auto;
+}
+
+/*Первый*/
+.first
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+     /*Высота*/
+    height : 100vh;
+     /*Вставляет фото по центру и без повторений*/
+    background: url("../Zaliczenie/images/first.jpg")
+     center
+     no-repeat;
+      /*Занимает всю площадь экрана*/
+     background-size: cover;
+}
+
+.first__inner
+{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.first__title
+{
+  font-size: 70px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+   
+  text-align: center;
+
+  line-height: 1;
+
+  color: #fff;
+}
+
+ /*Вставляет псевдо элемент*/
+.first__title:after
+{
+     /*Полосочка*/
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+
+  background-color: #fff;
+  margin: 60px auto 60px ;
+}
+
+.first__subtitle
+{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+/* Класс для шапки*/
+.header
+{
+    width: 100%;
+    /*Делает эллемент невидимым для других эллементов*/
+    position: absolute;
+    /*Координаты обьекта*/
+    top: 0;
+    left: 0;
+    right: 0;
+    /*Переносит обьект поверх всего*/
+    z-index: 1000;
+}
+/* Растягивает эллементы по всей странице
+лого слева а кнопки справа*/
+.header__inner
+{
+    /* Добавляет границу отступа вокруг элемента(сверху)*/
+    padding-top: 30px;
+    /* Дает эллементам гибкость*/
+    display: flex;
+    /* Определяет пространство между и вокруг эллементов*/
+    justify-content: space-between;
+    /* Выравнивает как justify но сверху и снизу*/
+    align-items: center;
+}
+
+/* Класс для лого*/
+.header__logo
+{
+    font-size: 30px;
+    /* Насыщенность шрифта*/
+    font-weight: 700;
+    color: #fff;
+}
+/* Класс для навигации*/
+.nav
+{
+    font-size: 14px;
+    /* Шрифт capslock*/
+    text-transform: uppercase;
+}
+/* Класс для кнопок навигации*/
+.nav__link 
+{
+    /* Назначает свойства дисплею*/
+    display: inline-block;
+    /* Вертикально выравнивает элементы внутри класса*/
+    vertical-align: top;
+    /* отступ между эллементами*/
+    margin: 0 15px;
+    /* Положение эллемента устанавливается в зависимости
+    от исходного места*/
+    position: relative;
+   color: #fff;
+   /* Убирает подчеркивание ссылок */
+   text-decoration: none;
+   /* Длительность подсвечивания иконок*/
+   transition: color  .1s linear;
+}
+/* класс при наводе мышкой на навигацию*/
+.nav__link::after
+{
+  /* Генерирует содержимое*/
+  content: "";
+  /* Делает элемент блочным (увеличивает зону рааботы 
+  навода ссылки*/
+  display: block;
+  width: 100%;
+  height: 3px;
+  display: none;
+
+  background-color: #fce38a;
+   /*элемент не виден для других*/
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /*Устанавливет слой обьекта*/
+  z-index: 1;
+  transition: opacity .1s linear;
+
+
+}
+/* Добававляет изменение цвета при наведении на кнопку*/
+.nav__link:hover
+{
+color: #fce38a
+}
+.nav__link:hover::after
+{
+    display: block;
+}
+.button
+{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+.button:hover
+{
+    background-color: #fff;
+    color: #333;
+}

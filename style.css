@@ -222,3 +222,124 @@ color: #fce38a
     background-color: #fff;
     color: #333;
 }
+
+.section
+{
+    padding: 80px 0px;
+}
+
+.section__header
+{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: 40px ;
+}
+
+.section__subtitle
+{
+    font-family: 'Kaushan Script', sans-serif,
+    cursive;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+.section__title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section__text
+{
+    
+color: #999;
+font-size: 15px;
+
+}
+
+.section__title:after
+{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 25px auto 0px;
+
+    background-color: #f38181;
+}    
+
+.about
+{
+
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+
+.about__item
+{
+    width: 380px;
+}
+.about__img
+{
+    background: linear-gradient(to bottom, #272727, #666666);
+    transition: transform .1s linear;
+}
+.about__item:hover .about__img
+{
+    transform: translate3d(-10px, -10px, 0px);
+}
+
+.about__item:hover .about__img img 
+{
+    opacity: .7;
+}
+.about__img img
+{
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about__text
+{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+.section::after
+{
+    content: "";
+    display: block;
+    width: 950px;
+    height: 3px;
+    margin: 25px auto 0px;
+
+    background-color: #f38181;
+    
+}
+.fff
+{
+    text-align: center;
+    
+}
+.asasas
+{
+    font-size: 30px;
+    display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.asasas__vvvv
+{
+    font-size: 30px;
+    display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}

@@ -133,57 +133,6 @@ color: #fce38a;
 {
     display: block;
 }
-.first__inner
-{
-  width: 100%;
-  max-width: 1000px;
-  /*Выравнивает по центру*/
-  margin: 0 auto;
-  text-align: center;
-}
-
-.first__title
-{
-  font-size: 70px;
-  font-weight: 700;
-
-  background-color: rgb(0, 0, 0);
-  /*Прозрачность фона*/
-  opacity: 0.7;
-  margin-bottom: 80px;
-  padding-bottom: 37px;
-  padding-top: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
-   
-  text-align: center;
-
-  line-height: 1;
-
-  color: #fff ;
-  
-}
-.button
-{
-    display: inline-block;
-    /* Выравнивает по вертикали*/
-    vertical-align: top;
-    padding: 8px 30px;
-    color: rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 700;
-    border: 3px solid rgb(3, 3, 3);
-    /* Капс лок шрифт*/
-    text-transform: uppercase;
-    text-decoration: none;
-    /*Плавный переход*/
-    transition: color .1s linear;
-}
-.button:hover
-{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-}
 .section
 {
     padding: 80px 0px;
@@ -200,15 +149,7 @@ color: #fce38a;
     margin-bottom: 40px ;
 }
 
-.section__subtitle
-{
-    /*Курсивный шрифт каушан*/
-    font-family: 'Kaushan Script', sans-serif,
-    cursive;
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-}
+
 .section__title
 {
     padding-top: 30px;
@@ -228,20 +169,6 @@ color: rgb(58, 58, 58);
 font-size: 20px;
 
 }
-
-/*Псевдо элемент*/
-.section__title:after
-{
-    /*Создает полосочку*/
-    content: "";
-    /*Блочную*/
-    display: block;
-    width: 60px;
-    height: 3px;
-    margin: 25px auto 0px;
-
-    background-color: #f38181;
-}    
 .leftimg {
     float:left; /* Выравнивание по левому краю */
     margin: 7px 7px 0px; /* Отступы вокруг картинки */

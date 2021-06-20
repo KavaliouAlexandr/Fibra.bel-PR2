@@ -1,17 +1,15 @@
 body {
-     /*Отступ*/
-    margin:0;
-     /*Шрифт*/
-     font-family: 'Montserrat', sans-serif;
-     /*Размер текста*/
-    font-size: 15px;
-    /*Межстрочный отстсуп*/
-    line-height: 1.6;
-    color: #333;
-    
+    /*Отступ*/
+   margin:0;
+    /*Шрифт*/
+    font-family: 'Montserrat', sans-serif;
+    /*Размер текста*/
+   font-size: 15px;
+   /*Межстрочный отстсуп*/
+   line-height: 1.6;
+   color: rgb(0, 0, 0);
+   
 }
-
-/*Плавный скролл*/
 html
 {
  scroll-behavior: smooth;
@@ -30,7 +28,6 @@ h1, h2, h3, h4, h5, h6
 {
   margin: 0;
 }
-
 /*контейнер*/
 .container 
 {
@@ -41,78 +38,6 @@ h1, h2, h3, h4, h5, h6
    margin: 0 auto;
 }
 
-/*Первый*/
-.first
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-     /*Высота*/
-    height : 100vh;
-     /*Вставляет фото по центру и без повторений*/
-    background: url("../Zaliczenie/images/11.jpg")
-     center
-     no-repeat;
-      /*Занимает всю площадь экрана*/
-     background-size: cover;
-}
-
-.first__inner
-{
-  width: 100%;
-  max-width: 1000px;
-  /*Выравнивает по центру*/
-  margin: 0 auto;
-  text-align: center;
-}
-
-.first__title
-{
-  font-size: 70px;
-  font-weight: 700;
-
-  background-color: rgb(88, 40, 0);
-  /*Прозрачность фона*/
-  opacity: 0.7;
-  margin-bottom: 80px;
-  padding-bottom: 37px;
-  padding-top: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
-   
-  text-align: center;
-
-  line-height: 1;
-
-  color: #fff ;
-  
-}
-
- /*Вставляет псевдо элемент*/
-.first__title:after
-{
-     /*Полосочка*/
-  content:"";
-  width: 60px;
-  height: 3px;
-
-  background-color: #fff;
-  /*Выравнивает по центру с отступами слева и справа*/
-  margin: 60px auto 80px ;
-}
-
-.first__subtitle
-{
-    margin-bottom: 20px;
-    font-size: 30px;
-    color: #fff;
-    /*Выравнивает текст по центру*/
-    text-align: center;
-    
-}
-
-/* Класс для шапки*/
 .header
 {
     width: 100%;
@@ -124,6 +49,7 @@ h1, h2, h3, h4, h5, h6
     right: 0;
     /*Переносит обьект поверх всего*/
     z-index: 1000;
+    background-color: #ef7d1a;
 }
 /* Растягивает эллементы по всей странице
 лого слева а кнопки справа*/
@@ -144,7 +70,7 @@ h1, h2, h3, h4, h5, h6
 {
     font-size: 30px;
     /* Насыщенность шрифта*/
-    font-weight: 700;
+    font-weight: 900;
     color: #fff;
 }
 /* Класс для навигации*/
@@ -153,6 +79,7 @@ h1, h2, h3, h4, h5, h6
     font-size: 14px;
     /* Шрифт capslock*/
     text-transform: uppercase;
+    font-weight: 900;
 }
 /* Класс для кнопок навигации*/
 .nav__link 
@@ -200,44 +127,55 @@ h1, h2, h3, h4, h5, h6
 /* Добававляет изменение цвета при наведении на кнопку*/
 .nav__link:hover
 {
-color: #fce38a
+color: #fce38a;
 }
 .nav__link:hover:after
 {
     display: block;
 }
-.button
+.first__inner
 {
-    display: inline-block;
-    /* Выравнивает по вертикали*/
-    vertical-align: top;
-    padding: 8px 30px;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    border: 3px solid #fff;
-    /* Капс лок шрифт*/
-    text-transform: uppercase;
-    text-decoration: none;
-    /*Плавный переход*/
-    transition: color .1s linear;
-}
-.button:hover
-{
-    background-color: #fff;
-    color: #333;
+  width: 100%;
+  max-width: 1000px;
+  /*Выравнивает по центру*/
+  margin: 0 auto;
+  text-align: center;
 }
 
+.first__title
+{
+  font-size: 70px;
+  font-weight: 700;
+
+  background-color: rgb(0, 0, 0);
+  /*Прозрачность фона*/
+  opacity: 0.7;
+  margin-bottom: 80px;
+  padding-bottom: 37px;
+  padding-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+   
+  text-align: center;
+
+  line-height: 1;
+
+  color: #fff ;
+  
+}
 .section
 {
     padding: 80px 0px;
+    background-size: cover;
+    background-color:rgb(245, 239, 220);
+    
 }
 
 .section__header
 {
     width: 100%;
     /*Ширина*/
-    max-width: 950px;
+    max-width: 1200px;
     /*Выравнивает по центру*/
     margin: 0 auto;
     margin-bottom: 40px ;
@@ -246,6 +184,7 @@ color: #fce38a
 
 .section__title
 {
+    padding-top: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     /*Толщина текста*/
@@ -259,7 +198,7 @@ color: #fce38a
 {
     
 color: rgb(58, 58, 58);
-font-size: 15px;
+font-size: 20px;
 
 }
 
@@ -276,79 +215,3 @@ font-size: 15px;
 
     background-color: #f38181;
 }    
-
-.about
-{
-  /*Заполняет предметом свободное место*/
-  display: flex;
-  justify-content: space-between;
-  
-
-}
-
-
-.about__item
-{
-    width: 380px;
-}
-.about__img
-{
-    /*Градиент*/
-    background: linear-gradient(to bottom, #272727, #666666);
-    /*Плавный переход*/
-    transition: transform .1s linear;
-}
-.about__item:hover .about__img
-{
-    /*Сдвигает картинку при наведении*/
-    transform: translate3d(-10px, -10px, 0px);
-}
-
-.about__item:hover .about__img img 
-{
-    /*Прозрачность*/
-    opacity: .7;
-}
-.about__img img
-{
-    display: block;
-    transition: opacity .1s linear;
-}
-
-.about__text
-{
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-}
-.section::after
-{
-    content: "";
-    display: block;
-    width: 950px;
-    height: 3px;
-    margin: 25px auto 0px;
-
-    background-color: #f38181;
-    
-}
-.fff
-{
-    text-align: center;
-    
-}
-.asasas
-{
-    font-size: 30px;
-    display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-.asasas__vvvv
-{
-    font-size: 30px;
-    display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 30px;
-}

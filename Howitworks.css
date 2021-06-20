@@ -242,3 +242,48 @@ font-size: 20px;
 
     background-color: #f38181;
 }    
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 0px; /* Отступы вокруг картинки */
+   }
+   .rightimg  {
+    float: right; /* Выравнивание по правому краю  */ 
+     
+   }
+   .rightimg1  {
+    float: right; /* Выравнивание по правому краю  */ 
+     padding-bottom: 50px;
+   }
+
+   .fff::before
+   {
+       content: "";
+       display: block;
+       width: 950px;
+       height: 3px;
+       margin: 25px auto 0px;
+   
+       background-color: #f38181;
+      margin-bottom: 100px;
+       
+   }  
+   .fff
+{
+    text-align: center;
+    
+}
+.asasas
+{
+    font-size: 30px;
+    display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.asasas__vvvv
+{
+    font-size: 30px;
+    display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 30px;
+}

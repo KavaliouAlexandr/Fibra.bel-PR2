@@ -216,3 +216,17 @@ table
   text-align: center;
   padding-bottom: 30px;
 }
+@media (max-width: 1200px) {
+
+    
+    .first__subtitle {
+        font-size: 32px;
+    }
+
+    .first__title {
+        font-size: 100px;
+    }
+    
+
+    
+}

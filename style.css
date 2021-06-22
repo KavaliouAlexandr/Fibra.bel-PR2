@@ -1,17 +1,17 @@
 body {
-     /*Отступ*/
+     /*Отступ/odstęp*/
     margin:0;
-     /*Шрифт*/
+     /*Шрифт/Czcionka*/
      font-family: 'Montserrat', sans-serif;
-     /*Размер текста*/
+     /*Размер текста/Rozmiar tekstu*/
     font-size: 15px;
-    /*Межстрочный отстсуп*/
+    /*Межстрочный отстсуп/Wcięcie*/
     line-height: 1.6;
     color: #333;
-    
+   
 }
 
-/*Плавный скролл*/
+/*Плавный скролл/Gładki skroll*/
 html
 {
  scroll-behavior: smooth;
@@ -22,10 +22,10 @@ html
 *:after 
 
 {
- /*Размер блока*/
+ /*Размер блока/Rozmiar bloku*/
 box-sizing: border-box;
 }
- /*Всем заголовкам задает margin 0*/
+ /*Всем заголовкам задает margin 0/nagłowki margin 0*/
 h1, h2, h3, h4, h5, h6
 {
   margin: 0;
@@ -34,10 +34,10 @@ h1, h2, h3, h4, h5, h6
 /*контейнер*/
 .container 
 {
-     /*Ширина*/
+     /*Ширина/szerokość*/
    width: 100%;
    max-width: 1200px;
-    /*Выравнивает по центру*/
+    /*Выравнивает по центру/Równamy po środku*/
    margin: 0 auto;
 }
 
@@ -50,11 +50,11 @@ h1, h2, h3, h4, h5, h6
     width: 100%;
      /*Высота*/
     height : 100vh;
-     /*Вставляет фото по центру и без повторений*/
+     /*Вставляет фото по центру и без повторений/zdjęcie cwnter i bez powtórek*/
     background: url("../Zaliczenie/images/11.jpg")
      center
      no-repeat;
-      /*Занимает всю площадь экрана*/
+      /*Занимает всю площадь экрана/Cała szerokość ekranu*/
      background-size: cover;
 }
 
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6
 {
   width: 100%;
   max-width: 1000px;
-  /*Выравнивает по центру*/
+  /*Выравнивает по центру/wyrównamy po środku*/
   margin: 0 auto;
   text-align: center;
 }
@@ -73,32 +73,34 @@ h1, h2, h3, h4, h5, h6
   font-weight: 700;
 
   background-color: rgb(88, 40, 0);
-  /*Прозрачность фона*/
+  /*Прозрачность фона/Przezroczystość tła*/
   opacity: 0.7;
+  /*Выравнивает на странице/Wyrówna na stronie*/
   margin-bottom: 80px;
+  /*Выравнивает текст в блоке/Wyrówna tekst w blokie*/
   padding-bottom: 37px;
   padding-top: 30px;
   margin-left: 40px;
   margin-right: 40px;
    
   text-align: center;
-
+ /*Межстрочный отстсуп/Wcięcie*/
   line-height: 1;
 
   color: #fff ;
   
 }
 
- /*Вставляет псевдо элемент*/
+ /*Вставляет псевдо элемент/Wstawia pseudoelement*/
 .first__title:after
 {
-     /*Полосочка*/
+     /*Полосочка/pasek*/
   content:"";
   width: 60px;
   height: 3px;
 
   background-color: #fff;
-  /*Выравнивает по центру с отступами слева и справа*/
+  /*Выравнивает по центру с отступами слева и справа/Wyrównuje do środka z lewą i prawą wyściółką*/
   margin: 60px auto 80px ;
 }
 
@@ -116,26 +118,27 @@ h1, h2, h3, h4, h5, h6
 .header
 {
     width: 100%;
-    /*Делает эллемент невидимым для других эллементов*/
+    /*Делает эллемент невидимым для других эллементов/Element jest ignorowany*/
     position: absolute;
-    /*Координаты обьекта*/
+    /*Координаты обьекта/koordynaty*/
     top: 0;
     left: 0;
     right: 0;
-    /*Переносит обьект поверх всего*/
+    /*Переносит обьект поверх всего/Umieszcza obiekt na wierzchu wszystkiego*/
     z-index: 1000;
 }
 /* Растягивает эллементы по всей странице
-лого слева а кнопки справа*/
+лого слева а кнопки справа/Umieszcza czapkę*/
 .header__inner
 {
-    /* Добавляет границу отступа вокруг элемента(сверху)*/
+    /*Добавляет границу отступа вокруг элемента(сверху)/odstęp na górze*/
     padding-top: 30px;
-    /* Дает эллементам гибкость*/
+    /*Растягивает элементы вдоль страницы/Rozciąga elementy wzdłuż strony*/
     display: flex;
-    /* Определяет пространство между и вокруг эллементов*/
+    /*Определяет пространство между и вокруг эллементов/Definiuje przestrzeń pomiędzy i wokół elementów*/
     justify-content: space-between;
-    /* Выравнивает как justify но сверху и снизу*/
+    /* Выравнивает как justify но сверху и снизу
+    /Wyrównuje jako justify, ale do góry i do dołu*/
     align-items: center;
 }
 
@@ -143,7 +146,7 @@ h1, h2, h3, h4, h5, h6
 .header__logo
 {
     font-size: 30px;
-    /* Насыщенность шрифта*/
+    /*Насыщенность шрифта/Nasycenie czcionki*/
     font-weight: 700;
     color: #fff;
 }
@@ -157,47 +160,49 @@ h1, h2, h3, h4, h5, h6
 /* Класс для кнопок навигации*/
 .nav__link 
 {
-    /* Назначает свойства дисплею*/
+    /* Назначает свойства дисплею/bloki ale wdłuż*/
     display: inline-block;
-    /* Вертикально выравнивает элементы внутри класса*/
+    /* Вертикально выравнивает элементы внутри класса/wyrówna po wertykali*/
     vertical-align: top;
-    /* отступ между эллементами*/
+    /* отступ между эллементами верх и низ 0 и между 15/odstęp między elementami*/
     margin: 0 15px;
     /* Положение эллемента устанавливается в зависимости
-    от исходного места*/
+    от исходного места/Posicja zależy od miejsca standartowego*/
     position: relative;
    color: #fff;
-   /* Убирает подчеркивание ссылок */
+   /* Убирает подчеркивание ссылок/Usuwamy standardowe podkreślenie linków */
    text-decoration: none;
-   /* Длительность подсвечивания иконок*/
+   /* Длительность подсвечивания иконок/czas świecenia knopek*/
    transition: color  .1s linear;
 }
 /* класс при наводе мышкой на навигацию*/
 .nav__link::after
 {
-  /* Генерирует содержимое*/
+  /* Генерирует содержимое/Pasek*/
   content: "";
-  /* Делает элемент блочным (увеличивает зону рааботы 
-  навода ссылки*/
+  /* Делает элемент блочным (увеличивает зону работы 
+  навода ссылки/Powiększa pracę linków robi ja blokiem*/
   display: block;
   width: 100%;
   height: 3px;
-  /*Убирает автоматическое подсвечивание полос под кнопками*/
+  /*Убирает автоматическое подсвечивание полос под кнопками
+  /Pasków nie widać dopóki nie rozpoczniemy z nimi pracować*/
   display: none;
 
   background-color: #fce38a;
-   /*элемент не виден для других*/
+   /*элемент не виден для других/element jest ignorowany*/
   position: absolute;
   top: 100%;
   left: 0;
-  /*Устанавливет слой обьекта*/
+  /*Устанавливет слой обьекта/Ustawia warstwę obiektu tutaj w tle*/
   z-index: 1;
-  /*Плавный переход*/
+  /*Плавный переход/Płynne przejście*/
   transition: opacity .1s linear;
 
 
 }
-/* Добававляет изменение цвета при наведении на кнопку*/
+/* Добававляет изменение цвета при наведении на кнопку
+/Dodaje zmianę koloru po najechaniu na przycisk*/
 .nav__link:hover
 {
 color: #fce38a
@@ -209,17 +214,17 @@ color: #fce38a
 .button
 {
     display: inline-block;
-    /* Выравнивает по вертикали*/
+    /* Выравнивает по вертикали/Wyrównuje pionowo*/
     vertical-align: top;
     padding: 8px 30px;
     color: #fff;
     font-size: 14px;
     font-weight: 700;
     border: 3px solid #fff;
-    /* Капс лок шрифт*/
+    /* Капс лок шрифт/capslock*/
     text-transform: uppercase;
     text-decoration: none;
-    /*Плавный переход*/
+    /*Плавный переход/Płynne przejście*/
     transition: color .1s linear;
 }
 .button:hover
@@ -252,21 +257,22 @@ color: #fce38a
     font-weight: 600;
     color: #333;
     text-align: center;
-    /*Капс*/
+    /*Капс/CapsLock*/
     text-transform: uppercase;
 }
 .section__text
 {
     
 color: rgb(58, 58, 58);
-font-size: 15px;
+font-size: 35px;
+text-align: center;
 
 }
 
 /*Псевдо элемент*/
 .section__title:after
 {
-    /*Создает полосочку*/
+    /*Создает полосочку/Pasek*/
     content: "";
     /*Блочную*/
     display: block;
@@ -293,25 +299,27 @@ font-size: 15px;
 }
 .about__img
 {
-    /*Градиент*/
+    /*Градиент/Gradient*/
     background: linear-gradient(to bottom, #272727, #666666);
-    /*Плавный переход*/
+    /*Плавный переход/Płynne przejście*/
     transition: transform .1s linear;
 }
 .about__item:hover .about__img
 {
-    /*Сдвигает картинку при наведении*/
+    /*Сдвигает картинку при наведении/Przesuwa obraz po najechaniu kursorem
+    prawo do góry 10 ostatnie 0*/
     transform: translate3d(-10px, -10px, 0px);
 }
 
 .about__item:hover .about__img img 
 {
-    /*Прозрачность*/
+    /*Прозрачность/Przejrzystość*/
     opacity: .7;
 }
 .about__img img
 {
     display: block;
+    /*Время подсвечивания картинки/Czas podświetlenia obrazu*/
     transition: opacity .1s linear;
 }
 
@@ -351,4 +359,94 @@ font-size: 15px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 30px;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+    /* Intro */
+    .first__subtitle {
+        font-size: 32px;
+    }
+
+    .first__title {
+        font-size: 100px;
+    }
+    
+
+    
+}
+@media (max-width: 990px) {
+
+    /* Intro */
+    .first__subtitle {
+        font-size: 32px;
+    }
+
+    .first__title {
+        font-size: 80px;
+    }
+}
+@media (max-width: 770px) {
+
+    .nav {
+        display: none;
+        width: 100%;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        background-color: #eb8b8d;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+
+    /* Section */
+    .section {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 575px) {
+
+    /* Intro */
+    .first__subtitle {
+        font-size: 22px;
+    }
+
+    .first__title {
+        font-size: 40px;
+    }
+
+    /* Section */
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+    .about__item
+    {
+        width: 1140px;
+    }
 }

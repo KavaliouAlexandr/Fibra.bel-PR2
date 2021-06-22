@@ -162,6 +162,18 @@ color: #fce38a;
     /*Капс*/
     text-transform: uppercase;
 }
+.section__title:after
+{
+    /*Создает полосочку*/
+    content: "";
+    /*Блочную*/
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 25px auto 0px;
+
+    background-color: #f38181;
+}  
 .section__text
 {
     

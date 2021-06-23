@@ -1,0 +1,259 @@
+body {
+    width: 100%;
+    margin: 0px;
+    font: 16px/24px 'robotoregular';
+    background-color: #f3f4f5;
+}
+
+header {
+    background-color: #a5adb0;
+}
+
+.header-margin {
+    margin: 0px 20px;
+}
+
+.logo {
+    width: 131px;
+    height: 52px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    display: none;
+}
+
+.nav li {
+    padding: 10px;
+    margin-top: 30px;
+}
+
+button {
+    background-color: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav button {
+    border-style: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nav a {
+    color: black;
+    font-size: 18px;
+}
+
+.active-button {
+    background-color: #ffc000;
+}
+
+.active-button a {
+    color: white;
+}
+
+.nav button:hover {
+    background-color: #656a6f;
+}
+
+select {
+    overflow: visible;
+    width: 100%;
+    margin-top: 25px;
+}
+
+section ul {
+    list-style: none;
+}
+
+.background-image {
+    background-image: url(masthead@2x.jpg);
+    background-size: 1000px;
+    background-position: center center;
+    max-width: none;
+    height: 500px;
+    opacity: 50%;
+}
+
+.position-header {
+    margin: 0px 20px;
+}
+
+h1 {
+    color: white;
+    font-size: 56px;
+    border-top: 1px solid white;
+    padding-top: 100px;
+}
+
+header h2 {
+    color: white;
+}
+
+header p {
+    padding-top: 50px;   
+    padding-bottom: 50px;
+}
+
+.read-more a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.read-more a:hover {
+    color: #ffc000;
+}
+header p {
+    color: white;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: #ffc000;
+    border-radius: 20%;
+    margin-top: 43px;
+    margin-left: 5px;
+}
+
+.title-square {
+    display: flex;
+}
+
+.main-margin {
+    margin: 0px 20px;
+}
+
+main h2 {
+    font-size: 35px;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    color: #ffc000;
+}
+
+.main-margin {
+    margin: 0px 20px;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 31px;
+    height: 31px;
+}
+
+.social-media li {
+    padding: 0 5px;
+}
+
+.logo-footer {
+    width: 45px;
+    height: 19px;
+}
+
+.selfy-copywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 601px) 
+{
+    
+}
+
+@media screen and (min-width: 769px)
+{
+    h1 {
+        font-size: 70px;
+    }
+
+ .logo {
+    margin-left: 20px;
+ }  
+
+ .nav {
+     justify-content: space-between;
+     margin-left: 150px;
+     margin-right: 150px;
+     display: flex;
+ }
+
+ select {
+     display: none;
+ }
+
+ .background-image {
+     height: 1000px;
+ }
+
+ .background-image {
+    background-size: 2200px;
+    height: 800px;
+    opacity: 100%;
+}
+
+ .container {
+     display: flex;
+ }
+
+ .container li {
+     padding-left: 25px;
+     padding-right: 25px;
+ }
+
+ footer {
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+@media screen and (min-width: 869px) 
+{
+    .flex-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1124px) 
+{
+    main, footer, .header-margin {
+        width: 1124px;
+        margin: 0px auto;
+    }
+
+    .position-header {
+        width: 1124px;
+        margin: 0px auto
+    }
+
+    .position-header p{
+        width: 600px;
+    }
+}

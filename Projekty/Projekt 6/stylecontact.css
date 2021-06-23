@@ -1,0 +1,305 @@
+body {
+    width: 100%;
+    background-color: #f3f4f5;
+    margin: 0px;
+    font: 16px/24px 'robotoregular';
+}
+
+main section {
+    margin: 0px 20px;
+}
+
+.logo {
+    width: 131px;
+    height: 52px;
+    margin: 0px auto;
+    margin-top: 25px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    display: none;
+}
+
+.nav li {
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #f3f4f5;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav button {
+    border-style: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.nav a {
+    color: black;
+    font-size: 18px;
+}
+
+.active-button {
+    background-color: #ffc000;
+}
+
+.active-button a {
+    color: white;
+}
+
+.nav button:hover {
+    background-color: #656a6f;
+}
+
+.select {
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+select {
+    overflow: visible;
+    width: 100%;
+    margin-top: 25px;
+}
+
+section ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.subtitle {
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 0px;
+}
+
+.grey-text {
+    color: grey;
+    font-size: 18px;
+}
+
+.header-margin {
+    margin: 0px 20px;
+}
+
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: #ffc000;
+    border-radius: 20%;
+    margin-top: 70px;
+}
+
+.square-2 {
+    width: 10px;
+    height: 10px;
+    background-color: #ffc000;
+    border-radius: 20%;
+    margin-top: 43px;
+}
+
+.title-square {
+    display: flex;
+}
+
+.forms-1-2 {
+    display: block;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px lightgray solid;
+}
+
+.opinion-form {
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 1px lightgray solid;
+    width: 100%;
+}
+
+input[type="submit"] {
+    border-style: none;
+    background-color: #ffc000;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+}
+
+.grid-left {
+    padding-bottom: 50px;
+    border-bottom: 1px solid grey;
+}
+
+.links {
+    padding-left: 0px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+}
+
+.links a{
+    list-style: none;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: #ffc000;
+}
+
+.link-bold {
+    color: black;
+    text-decoration: none;
+}
+
+.link-bold:hover {
+    color: #ffc000;
+}
+
+.grey-text-2 {
+    color: grey;
+    font-size: 18px;
+    padding-top: 50px;
+}
+
+.last-position {
+    padding-bottom: 50px;
+}
+
+footer {
+    border-top: 1px solid black;
+}
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media img {
+    width: 31px;
+    height: 31px;
+}
+
+.social-media {
+    padding-top: 50px;
+}
+
+.social-media li {
+    padding: 0 5px;
+}
+
+.logo-footer {
+    width: 45px;
+    height: 19px;
+}
+
+.selfy-copywrite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+@media screen and (min-width: 601px) 
+{
+    .select {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    select {
+        max-width: 100px;
+    }
+
+    .social-media {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 769px) 
+{
+    select {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto 300px;
+    }
+
+    .left-side {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .right-side {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-left: 1px solid grey;
+        padding-left: 25px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .post {
+        display: flex;
+    }
+
+    .post-border {
+        display: flex;
+    }
+
+    .title-square {
+        width: 342px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 869px) 
+{
+    .flex-header {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1124px) 
+{
+    body {
+        width: 1124px;
+        margin: 0px auto;
+    }
+}

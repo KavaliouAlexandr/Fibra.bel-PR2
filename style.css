@@ -319,7 +319,7 @@ text-align: center;
 .about__img img
 {
     display: block;
-    /*Время подсвечивания картинки/Czas podświetlenia obrazu*/
+    /*Время подсвечивания картинки/Przejrzystość*/
     transition: opacity .1s linear;
 }
 

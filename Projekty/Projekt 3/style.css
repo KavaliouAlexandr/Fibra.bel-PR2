@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 100%;
+}
+
+main {
+    background: #252a3a;
+}
+
+#menu {
+    text-align: right;
+}
+
+#compose {
+    text-align: center;  
+}
+
+.menu-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #252a3a;
+    border-style: none;
+    font: 16px;
+    color: #1b98f8;
+    cursor: pointer;
+}
+
+.compose-button {
+    border-radius: 20%;
+    background: #252a3a;
+    border-style: none;
+    font: 16px;
+    color: white;
+    border-radius: 20px;
+    width: 90px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 100%;
+    background: #1b98f8;
+    cursor: pointer;
+}
+
+.button {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-style: none;
+    background: #252a3a;   
+    font: 16px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+}
+
+.labels {
+    font: 16px;
+    color: white;
+    opacity: 50%;
+}
+
+.square1 {
+    width: 14px;
+    height: 14px;
+    background-color: yellow;
+    border-radius: 20%;
+    margin-right: 8px;
+  }
+
+.square2 {
+    width: 14px;
+    height: 14px;
+    background-color: aqua;
+    border-radius: 20%;
+    margin-right: 8px;
+}
+
+.square3 {
+    width: 14px;
+    height: 14px;
+    background-color: green;
+    border-radius: 20%;
+    margin-right: 8px;
+    margin-bottom: 20px;
+  }
+
+section {
+    max-width: 639px;
+    height: 100%;
+}
+
+#mail1 {
+    display: flex;
+    border-bottom: 1px solid grey;
+    margin-left: 18px;
+    margin-top: 8px;
+}
+
+#mail1:hover {
+    background-color:#eee;
+}
+
+.profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.text {
+    width: 350px;
+}
+
+.name-surname {
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title {
+    font-size: 16px;
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.mail-text {
+    color: black;
+    font-size: 13px;
+    margin: 7px 0;
+    padding-top: 14px;
+    padding-bottom: 16px;
+}
+
+.mail2-3 {
+    border-left: 6px solid #1b98f8;
+    display: flex;   
+    padding-left: 12px;
+    padding-top: 12px;
+    border-bottom: 1px solid grey;
+}
+
+.mail4-7 {
+    display: flex;
+    padding-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid grey;
+}
+
+#mail {
+    width: 100%;
+}
+
+#mail-up {
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.main-mail-title {
+    font-size: 32px;
+    color: black;
+    margin: 0;
+    margin-top: 35px;
+    margin-left: 18px;
+}
+
+.main-mail-undertitle {
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    margin-left: 18px;
+    margin-bottom: 12px;
+}
+
+#main-mail-right {
+    margin-right: 18px;
+    width: 100%;
+    display: flex-end;
+    text-align: right;
+}
+
+
+.button2 {
+    border-radius: 20%;
+    background: white;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font: 16px;
+    color: #666;
+    border-radius: 20px;
+    width: 75px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.blue-link {
+    color: #1b98f8;
+    text-decoration: none;
+}
+
+.grey-link {
+    color: #999;
+    text-decoration: none;
+}
+
+.mail-text2 {
+    padding-top: 10px;
+    margin: 16px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 639px) {
+    body {
+        display: grid;
+        grid-template-columns: 150px auto;  
+        width: 100%;    
+    }
+
+    section2 {
+        grid-column: 3; grid-row: 1;
+        width: auto;
+        border-left: solid 1px grey;
+    }
+
+    #main-mail-right {
+        display: flex-end;
+    }
+
+    #main-mail-left {
+        width: 100%;
+    }
+
+    main {
+        width: 150px;
+        height: 2000px;
+    }
+
+    .first-button {
+        float: right;
+        width: auto;
+    }
+
+}
+
+
+

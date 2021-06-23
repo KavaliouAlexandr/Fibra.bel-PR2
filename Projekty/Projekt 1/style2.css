@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+}
+
+
+#header-bar {
+    background-color: black;
+    height: 8px;
+}
+#about-us {
+    display: flex;
+}
+#about-left {}
+#about-right {}

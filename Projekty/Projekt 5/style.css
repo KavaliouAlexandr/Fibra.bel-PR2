@@ -1,0 +1,53 @@
+body {
+    width: auto;
+}
+
+nav {
+    visibility: hidden;
+    height: 100%;
+    width: 200px;
+    background-color: rgb(65, 131, 65);
+}
+
+
+#upperbox {
+    text-align: center;
+}
+
+#title {
+    color: rgb(65, 131, 65);
+    font-size: 30px;
+}
+
+#undertitle {
+    color: grey;
+}
+
+
+main {
+    width: auto;
+    display: flex;
+    text-align: right;
+}
+
+button {
+    background-color: rgb(65, 131, 65);
+    border-style: none;
+}
+
+#buttons {
+    margin-right: 10px;
+}
+
+.greentext {
+    font-size: 20px;   
+}
+
+#text {
+    border-left: 1px solid black;
+}
+
+.greentext {
+    margin-left: 10px;
+    color: rgb(65, 131, 65);
+}

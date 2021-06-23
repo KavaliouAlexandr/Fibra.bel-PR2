@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: verdana;
+}
+#header-bar {
+    background-color: #232323;
+    height: 8px;
+}
+#main {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+#header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#logo {
+    padding-bottom: 0;
+}
+#navigation {
+    margin-top: 20px;
+
+}
+#title {
+    padding-top: 20px;
+}
+#undertitle {
+    color: cadetblue;
+    font-style: normal;
+    text-align: center;
+}
+
+#about-us {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+#about-left p {
+    text-align: center;
+}
+#about-right {}
+#circles {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#circle1 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    text-align: center;
+}
+#circle1:hover {
+    opacity: 0.85;
+}
+#circle2 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: -30px;
+    opacity: 0.7;
+    text-align: center;
+}
+#circle3 {
+    background-color: #4f9ae0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: -30px;
+    opacity: 0.7;
+    text-align: center;
+
+}
+#circle2:hover {
+    opacity: 0.85;
+}
+.text {
+    margin-top: 80px;
+    color: azure;
+}
+#topics {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin-top: 50px;
+}
+#topic1 {
+    margin: 20px;
+    width: 250px;
+}
+#topic2 {
+    margin: 20px;
+    width: 250px;
+}
+#topic3 {
+    margin: 20px;
+    width: 250px;
+}
+#topic4 {
+    margin: 20px;
+    width: 250px;
+}
+#footer {
+    background-color: #232d2f;
+    background-image: url(zabek.jpg);
+    background-repeat: repeat-x;
+    margin-top: 40px;
+    height: 200px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+} 
+h4 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #aaa;
+    text-align: center;
+}

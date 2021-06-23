@@ -1,0 +1,108 @@
+body {
+    background-image: url(tlo.png);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: Arial;
+    font-size: 20px;
+    color: #cbd6df;
+}
+
+#logo {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+#undertitle {
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 0px;
+}
+section {
+    width: 455px;
+    height: 455px;
+    background-color: #fff;;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 5px;
+}
+
+.image {
+    padding: 5px;
+    margin: 0px;
+}
+
+
+h1 {
+    font: #cbd6df;
+    text-align: center;
+    border-bottom: 2px outset #819791;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-layer-51 {
+    justify-content: center;
+    width: 460px; 
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+a:link {
+    color: #819791;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+a:visited {
+    color: #819791;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+p {
+    text-align: justify;
+    font-size: 13px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+u {
+    text-decoration-style: dotted;
+}
+
+#mail {
+    justify-content: center;
+    margin: 0 auto;
+    width: 45px;
+    padding-top: 50px;
+}
+
+h4{
+    font-size: 10px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+h3 {
+    font-size: 11px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444;
+    padding-top: 40px;
+}
+footer {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}

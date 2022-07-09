@@ -201,16 +201,17 @@ font-weight: 600;
 
 .block-left
 {
+  padding-top: 40px;
   font-weight: bold;
   font-size: large;
   text-transform: uppercase;
   text-align: left;
-  width:50%;height:800px;overflow:auto;float:left;
+  width:50%;height:500px;overflow:auto;float:left;
 }
 .block-right
 {
   
-  width:50%;height:800px;overflow:auto;
+  width:50%;height:500px;overflow:auto;
 }
 
 .leftimg {

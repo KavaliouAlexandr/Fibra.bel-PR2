@@ -183,6 +183,36 @@ text-transform: uppercase;
 font-weight: 600;
 
 }
+
+.delivery1
+{
+     text-align: center;
+}
+
+.delivery2
+{
+
+    font-size: 35px;
+    text-align: center;
+    color:#ef7d1a;
+    margin: auto;
+
+}
+
+.block-left
+{
+  font-weight: bold;
+  font-size: large;
+  text-transform: uppercase;
+  text-align: left;
+  width:50%;height:800px;overflow:auto;float:left;
+}
+.block-right
+{
+  
+  width:50%;height:800px;overflow:auto;
+}
+
 .leftimg {
     float:left; /* Выравнивание по левому краю */
     margin: 7px 7px 0px; /* Отступы вокруг картинки */
@@ -305,6 +335,7 @@ font-weight: 600;
   }
   
   
+
   @media screen and (max-width: 980px){
     .contact-page{
       max-width: 800px;

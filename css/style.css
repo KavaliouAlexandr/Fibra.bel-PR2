@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6
      /*Высота*/
     height : 100vh;
      /*Вставляет фото по центру и без повторений/zdjęcie cwnter i bez powtórek*/
-    background: url("../Zaliczenie/images/11.jpg")
+    background: url("../images/11.jpg")
      center
      no-repeat;
       /*Занимает всю площадь экрана/Cała szerokość ekranu*/

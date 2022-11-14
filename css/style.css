@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6
 .header__inner
 {
     /*Добавляет границу отступа вокруг элемента(сверху)/odstęp na górze*/
-    padding-top: 30px;
+    padding-top: 10px;
     /*Растягивает элементы вдоль страницы/Rozciąga elementy wzdłuż strony*/
     display: flex;
     /*Определяет пространство между и вокруг эллементов/Definiuje przestrzeń pomiędzy i wokół elementów*/

@@ -40,16 +40,18 @@ margin: 0;
 
 .header
 {
+  position: fixed;
   width: 100%;
   /*Делает эллемент невидимым для других эллементов*/
-  position: absolute;
+  transition: top 0.3s;
   /*Координаты обьекта*/
-  top: 0;
-  left: 0;
-  right: 0;
   /*Переносит обьект поверх всего*/
   z-index: 1000;
   background-color: #ef7d1a;
+}
+
+.header.hidden {
+  top: -100px; /* Выдвигаем шапку за пределы верхней части экрана */
 }
 /* Растягивает эллементы по всей странице
 лого слева а кнопки справа*/
@@ -69,6 +71,7 @@ margin: 0;
 /* Класс для лого*/
 .header__logo
 {
+  text-decoration: none;
   font-size: 30px;
   /* Насыщенность шрифта*/
   font-weight: 900;
@@ -187,7 +190,7 @@ font-weight: 600;
 
 .delivery1
 {
-   text-align: center;
+  text-align: center;
 }
 
 .delivery2
@@ -202,7 +205,7 @@ font-weight: 600;
 
 .block-left
 {
-padding-top: 20px;
+padding-top: 50px;
 font-weight: bold;
 font-size: large;
 text-transform: uppercase;
@@ -211,21 +214,19 @@ width:50%;height:500px;overflow:auto;float:left;
 }
 .block-right
 {
-
 width:50%;height:500px;overflow:auto;
 }
 
 .leftimg {
-  float:left; /* Выравнивание по левому краю */
+  float:right; /* Выравнивание по левому краю */
   margin: 7px 7px 0px; /* Отступы вокруг картинки */
  }
  .rightimg  {
   float: right; /* Выравнивание по правому краю  */ 
-   
  }
  .rightimg1  {
   float: right; /* Выравнивание по правому краю  */ 
-   padding-bottom: 50px;
+  padding-bottom: 50px;
  }
 
  .fff::before
@@ -265,15 +266,12 @@ padding-bottom: 30px;
   max-width: 1600px;
   padding: 50px;
   display: flex;
-  align-items: flex-start;
-  
-  
 }
+
+
 .contact-info, .contact-form{
   flex: 1;
-  text-align: center;
   margin-right: 130px;
-  
 }
 
 .item{
@@ -294,22 +292,22 @@ padding-bottom: 30px;
 }
 
 /* .contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: 0 auto;
 } */
 
 .textb{
-  width: calc(100% - 10px);
+  width: calc(100%);
   height: 50px;
   padding: 12px;
   background-color: #222;
   border: none;
   color: #fff;
   margin-bottom: 20px;
+  border-radius: 13px;
 }
 
 textarea{
+  font-size: 15px;
   width: 100%;
   min-height: 200px;
   max-height: 400px;
@@ -319,12 +317,16 @@ textarea{
   border: none;
   color: #fff;
   margin-bottom: 20px;
+  border-radius: 13px;
+}
+
+textarea::placeholder {
+  padding: 2px; /* Задаем отступ для placeholder */
 }
 
 .btn{
   width: 120px;
   height: 40px;
-  margin-left: auto;
   background-color: #ef7d1a;
   border: none;
   color: #fff;
@@ -332,6 +334,8 @@ textarea{
   cursor: pointer;
   border: 2px solid #ef7d1a;
   transition: .3s linear;
+  border-radius: 13px;
+
 }
 
 .btn:hover{
@@ -354,7 +358,6 @@ textarea{
     flex: 100%;
     margin-bottom: 30px;
     margin-left: 160px;
-    
   }
   .textb{
     width: 100%;

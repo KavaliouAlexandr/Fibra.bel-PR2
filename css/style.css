@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6
 
 .first__subtitle
 {
-    padding-left: 5%;
+    padding-left: 7%;
     margin-bottom: 20px;
     font-size: 30px;
     color: #fff;
@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6
     /*Переносит обьект поверх всего/Umieszcza obiekt na wierzchu wszystkiego*/
     z-index: 1000;
 }
+
 /* Растягивает эллементы по всей странице
 лого слева а кнопки справа/Umieszcza czapkę*/
 .header__inner
@@ -143,6 +144,30 @@ h1, h2, h3, h4, h5, h6
     align-items: center;
 }
 
+.header.new {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
+    background-color: #fff; /* Задаем цвет фона шапки */
+    z-index: 1000; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    width: 100%;
+    background-color: #ef7d1a;
+  }
+
+.header.new .header__inner {
+  /* Добавляет границу отступа вокруг элемента(сверху)*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* Дает эллементам гибкость*/
+  display: flex;
+  /* Определяет пространство между и вокруг эллементов*/
+  justify-content: space-between;
+  /* Выравнивает как justify но сверху и снизу*/
+  align-items: center;
+}
 /* Класс для лого*/
 .header__logo
 {

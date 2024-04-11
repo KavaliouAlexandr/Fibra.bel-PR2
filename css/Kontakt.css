@@ -41,12 +41,14 @@ margin: 0;
 .header
 {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  /*Делает эллемент невидимым для других эллементов*/
-  transition: top 0.3s;
-  /*Координаты обьекта*/
-  /*Переносит обьект поверх всего*/
-  z-index: 1000;
+  transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
+  background-color: #fff; /* Задаем цвет фона шапки */
+  z-index: 1000; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  width: 100%;
   background-color: #ef7d1a;
 }
 
@@ -143,15 +145,15 @@ color: #fce38a;
   background-color:rgb(245, 239, 220);
 }
 
-.section__header
+/* .section__header
 {
   width: 100%;
-  /*Ширина*/
+  
   max-width: 1200px;
-  /*Выравнивает по центру*/
+  
   margin: 0 auto;
   margin-bottom: 40px ;
-}
+} */
 
 
 .section__title
@@ -178,58 +180,161 @@ color: #fce38a;
 
   background-color: #f38181;
 }  
-.section__text
-{
-  
+
+.contact-info {
 color: rgb(58, 58, 58);
-font-size: 20px;
+font-size: 30px;
 text-transform: uppercase;
 font-weight: 600;
+}
 
+.contact-page{
+  width: 100%;
+  max-width: 1600px;
+  padding: 50px;
+  display: flex;
+}
+
+.contact-page .contact-form {
+  text-align: end;
+}
+
+
+.contact-info, .contact-form{
+  flex: 1;
+  margin-right: 130px;
+}
+
+.item{
+  margin-top: 40px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: #322;
+}
+
+.icon{
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #222;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+
+.textb{
+  width: calc(100%);
+  height: 50px;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 13px;
+}
+
+textarea{
+  font-size: 15px;
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #222;
+  border: none;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 13px;
+}
+
+textarea::placeholder {
+  padding: 2px; /* Задаем отступ для placeholder */
+}
+
+
+form button {
+  width: 120px;
+  height: 40px;
+  background-color: #ef7d1a;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #ef7d1a;
+  transition: .3s linear;
+  border-radius: 13px;
+  
+}
+
+.btn:hover{
+  background-color: transparent;
+  color: #ef7d1a;
 }
 
 .delivery1
 {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .delivery2
 {
-
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 35px;
   text-align: center;
   color:#ef7d1a;
   margin: auto;
+}
 
+.delivery_end {
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color:#ef7d1a;
+  margin: auto;
+  margin-bottom: 30px;
 }
 
 .block-left
 {
-padding-top: 50px;
+padding-top: 60px;
+font-family: 'Montserrat', sans-serif;
+color: #333;
+padding-top: 40px;
 font-weight: bold;
 font-size: large;
 text-transform: uppercase;
 text-align: left;
-width:50%;height:500px;overflow:auto;float:left;
+width:50%;
+height:500px;
+
+overflow:auto;
+float:left;
 }
+
 .block-right
 {
-width:50%;height:500px;overflow:auto;
+width:50%;
+height:458px;
+overflow:auto;
+border-radius: 10px;
+transition: box-shadow 0.3s ease; /* Добавляем плавное изменение тени */
 }
 
-.leftimg {
-  float:right; /* Выравнивание по левому краю */
-  margin: 7px 7px 0px; /* Отступы вокруг картинки */
- }
- .rightimg  {
-  float: right; /* Выравнивание по правому краю  */ 
- }
- .rightimg1  {
-  float: right; /* Выравнивание по правому краю  */ 
-  padding-bottom: 50px;
- }
+.block-right:hover {
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+}
 
- .fff::before
+
+.fff::before
  {
      content: "";
      display: block;
@@ -261,88 +366,6 @@ margin: 0 auto;
 text-align: center;
 padding-bottom: 30px;
 }
-.contact-page{
-  width: 100%;
-  max-width: 1600px;
-  padding: 50px;
-  display: flex;
-}
-
-
-.contact-info, .contact-form{
-  flex: 1;
-  margin-right: 130px;
-}
-
-.item{
-  margin-top: 40px;
-  margin-bottom: 24px;
-  font-size: 16px;
-  color: #322;
-}
-
-.icon{
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  color: #222;
-  border-radius: 50%;
-  margin-right: 16px;
-}
-
-/* .contact-form{
-  margin-left: 0 auto;
-} */
-
-.textb{
-  width: calc(100%);
-  height: 50px;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-  border-radius: 13px;
-}
-
-textarea{
-  font-size: 15px;
-  width: 100%;
-  min-height: 200px;
-  max-height: 400px;
-  resize: vertical;
-  padding: 12px;
-  background-color: #222;
-  border: none;
-  color: #fff;
-  margin-bottom: 20px;
-  border-radius: 13px;
-}
-
-textarea::placeholder {
-  padding: 2px; /* Задаем отступ для placeholder */
-}
-
-.btn{
-  width: 120px;
-  height: 40px;
-  background-color: #ef7d1a;
-  border: none;
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 2px solid #ef7d1a;
-  transition: .3s linear;
-  border-radius: 13px;
-
-}
-
-.btn:hover{
-  background-color: transparent;
-  color: #3494db;
-}
-
 
 
 @media screen and (max-width: 980px){

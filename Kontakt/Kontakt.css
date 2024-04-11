@@ -41,12 +41,14 @@ margin: 0;
 .header
 {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  /*Делает эллемент невидимым для других эллементов*/
-  transition: top 0.3s;
-  /*Координаты обьекта*/
-  /*Переносит обьект поверх всего*/
-  z-index: 1000;
+  transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
+  background-color: #fff; /* Задаем цвет фона шапки */
+  z-index: 1000; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  width: 100%;
   background-color: #ef7d1a;
 }
 
@@ -178,15 +180,6 @@ color: #fce38a;
 
   background-color: #f38181;
 }  
-/* .section__text
-{
-  
-color: rgb(58, 58, 58);
-font-size: 30px;
-text-transform: uppercase;
-font-weight: 600;
-
-} */
 
 .contact-info {
 color: rgb(58, 58, 58);
@@ -281,6 +274,7 @@ form button {
 
 .delivery1
 {
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
@@ -292,6 +286,7 @@ form button {
 
 .delivery2
 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 35px;
   text-align: center;
@@ -324,21 +319,16 @@ float:left;
 .block-right
 {
 width:50%;
-height:500px;
+height:458px;
 overflow:auto;
+border-radius: 10px;
+transition: box-shadow 0.3s ease; /* Добавляем плавное изменение тени */
 }
 
-.leftimg {
-  float:right; /* Выравнивание по левому краю */
-  margin: 7px 7px 0px; /* Отступы вокруг картинки */
- }
- .rightimg  {
-  float: right; /* Выравнивание по правому краю  */ 
- }
- .rightimg1  {
-  float: right; /* Выравнивание по правому краю  */ 
-  padding-bottom: 50px;
- }
+.block-right:hover {
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+}
+
 
 .fff::before
  {

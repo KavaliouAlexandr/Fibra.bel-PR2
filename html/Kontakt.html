@@ -61,10 +61,11 @@
                 Каждый день с 8 утра до 6 вечера
               </div>
             </div>
-            <form action="" class="contact-form">
-              <input type="text" class="textb" placeholder="Имя">
-              <input type="email" class="textb" placeholder="Ваш Email">
-              <textarea placeholder="Сообщение"></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+              <input type="hidden" name="access_key" value="strong_random_key_here">
+              <input type="text" name="phone" class="textb" placeholder="Ваш Номер Телефона" required>
+              <input type="email" name="email" class="textb" placeholder="Ваш Email" required>
+              <textarea name="message" placeholder="Ваше Сообщение"></textarea>
               <button type="submit" class="btn">Отправить</button>
             </form>
           </div>

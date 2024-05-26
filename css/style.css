@@ -466,15 +466,17 @@ text-align: center;
 }
 @media (max-width: 770px) {
 
-    .nav {
+    .header.new {
+        width: 25%;
+        
+    }
+    
+    .header__logo {
         display: none;
-        width: 100%;
+    }
 
-        position: absolute;
-        top: 100%;
-        left: 0;
-
-        background-color: #eb8b8d;
+    .nav {
+        font-size: 14px;
     }
 
     .nav__link {
@@ -491,6 +493,21 @@ text-align: center;
     /* Section */
     .section {
         padding: 40px 0;
+    }
+
+    .about__item {
+        flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются, занимают свою ширину */
+        width: 100%; /* Фиксированная ширина для каждого элемента */
+        max-width: 380px; /* Максимальная ширина элемента */
+        margin-right: 10px; 
+        margin: 0 auto;
+        margin-bottom: 15px;
+        /* Отступ между элементами */
+    }
+
+    .about__img img {
+        width: 100%; /* Устанавливаем ширину изображения в 100% контейнера */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
     }
 }
 @media (max-width: 575px) {
@@ -523,5 +540,9 @@ text-align: center;
     .about__item
     {
         width: 1140px;
+    }
+
+    .nav {
+        font-size: 10px;
     }
 }

@@ -309,52 +309,49 @@ text-align: center;
     background-color: #f38181;
 }    
 
-.about
-{
-  /*Заполняет предметом свободное место*/
-  display: flex;
-  justify-content: space-between;
-  
-
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Обертка для больших экранов */
 }
 
-
-.about__item
-{
+.about__item {
     width: 380px;
+    margin-bottom: 20px; /* Добавляем отступ между элементами */
+    background-color: #ffffff; /* Белый фон для элементов */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    overflow: hidden; /* Обрезаем содержимое, выходящее за рамки */
 }
-.about__img
-{
-    /*Градиент/Gradient*/
-    background: linear-gradient(to bottom, #272727, #666666);
-    /*Плавный переход/Płynne przejście*/
+
+.about__img {
     transition: transform .1s linear;
 }
-.about__item:hover .about__img
-{
-    /*Сдвигает картинку при наведении/Przesuwa obraz po najechaniu kursorem
-    prawo do góry 10 ostatnie 0*/
+
+.about__item:hover .about__img {
     transform: translate3d(-10px, -10px, 0px);
 }
 
-.about__item:hover .about__img img 
-{
-    /*Прозрачность/Przejrzystość*/
+.about__item:hover .about__img img {
     opacity: .7;
 }
-.about__img img
-{
+
+.about__img img {
     display: block;
-    /*Время подсвечивания картинки/Przejrzystość*/
+    width: 100%; /* Устанавливаем ширину изображения в 100% контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
     transition: opacity .1s linear;
 }
 
-.about__text
-{
+.about__text {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
+    padding: 10px; /* Добавляем отступ внутри элемента текста */
 }
+
+/* Медиа-запросы для экранов меньше 768px */
+
 .section::after
 {
     content: "";
@@ -393,28 +390,79 @@ text-align: center;
 
 @media (max-width: 1200px) {
 
-    /* Intro */
     .first__subtitle {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .first__title {
-        font-size: 100px;
+        font-size: 55px;
     }
-    
 
-    
+    /* Section */
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+    .about__item
+    {
+        width: 1140px;
+    }
+
+    .about__item {
+        flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются, занимают свою ширину */
+        width: 100%; /* Фиксированная ширина для каждого элемента */
+        max-width: 380px; /* Максимальная ширина элемента */
+        margin-right: 10px; 
+        margin: 0 auto;
+        margin-bottom: 15px;
+        /* Отступ между элементами */
+    }
+
+    .about__img img {
+        width: 100%; /* Устанавливаем ширину изображения в 100% контейнера */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
+    }
+
 }
 @media (max-width: 990px) {
 
     /* Intro */
     .first__subtitle {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .first__title {
-        font-size: 80px;
+        font-size: 45px;
     }
+
+    /* Section */
+    .section__header {
+        margin-bottom: 50px;
+    }
+
+    .section__subtitle {
+        font-size: 20px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .section__title:after {
+        margin: 20px auto;
+    }
+    
 }
 @media (max-width: 770px) {
 

@@ -224,16 +224,16 @@ img {
 {
     font-size: 30px;
     display: block;
-  margin: 0 auto;
-  text-align: center;
+    margin: 0 auto;
+    text-align: center;
 }
 .asasas__vvvv
 {
     font-size: 30px;
     display: block;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
 }
 .fff::before
 {
@@ -244,7 +244,7 @@ img {
        margin: 25px auto 0px;
    
        background-color: #f38181;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
        
 }  
 .ss
@@ -252,4 +252,79 @@ img {
     font-size: 20px;
     
     
+}
+
+.table1 {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+
+@media (max-width: 1200px) {
+
+.asasas{
+    font-size: 50px;   
+}
+.asasas__vvvv
+{
+    font-size: 50px;
+}
+
+.header.new {
+    display: none;
+    
+}
+
+.header__logo {
+    display: none;
+}
+
+.nav {
+    flex-direction: column;
+    display: none;
+}
+
+  .nav.active {
+    font-size: 3vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35vw;
+    transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
+    background-color: #fff; /* Задаем цвет фона шапки */
+    z-index: 100; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    background-color: #ef7d1a;
+    
+}
+
+
+.nav__link {
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
+}
+
+.nav-toggle {
+    display: block;
+}
+
+.menu-toggle {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 120px;
+    transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
+    margin-right: 10px;
+    z-index: 1001; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+}
+
+
 }

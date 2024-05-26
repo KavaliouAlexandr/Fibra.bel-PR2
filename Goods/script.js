@@ -14,3 +14,8 @@ window.addEventListener("scroll", function() {
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Для поддержки Safari
 }, false);
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}

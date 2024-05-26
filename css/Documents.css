@@ -227,6 +227,10 @@ table
 
 @media (max-width: 1200px) {
 
+    .section__title {
+        font-size: 50px;
+    }
+
     
     .first__subtitle {
         font-size: 32px;
@@ -285,6 +289,14 @@ table
         transition: top 0.3s ease; /* Добавляем анимацию для плавного изменения top */
         margin-right: 10px;
         z-index: 1001; /* Устанавливаем высокий z-index, чтобы шапка находилась поверх других элементов */
+    }
+
+    .asasas{
+        font-size: 50px;   
+    }
+    .asasas__vvvv
+    {
+        font-size: 50px;
     }
     
 }

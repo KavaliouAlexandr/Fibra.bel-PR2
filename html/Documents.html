@@ -24,6 +24,7 @@
      <div class="header__inner">
        <!--Логотип -->
        <a class="header__logo" href="./Fibra.html">ФИБРА.БЕЛ</a>
+       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <!--Навигация (кнопки)-->
        <navigation class="nav"> 
            <a class="nav__link" href="../html/Fibra.html">Главная</a>
@@ -97,6 +98,13 @@
         </div>
         <div class="asasas__vvvv">
             +375 29 1 777 444</div>
+
+            <script>
+              function toggleMenu() {
+                  const nav = document.querySelector('.nav');
+                  nav.classList.toggle('active');
+              }
+          </script>
 
 </body>
 </html>

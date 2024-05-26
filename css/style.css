@@ -8,6 +8,7 @@ body {
     /*Межстрочный отстсуп/Wcięcie*/
     line-height: 1.6;
     color: #333;
+    box-sizing: border-box;
    
 }
 
@@ -414,10 +415,6 @@ text-align: center;
     .section__title:after {
         margin: 20px auto;
     }
-    .about__item
-    {
-        width: 1140px;
-    }
 
     .about__item {
         flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются, занимают свою ширину */
@@ -462,9 +459,14 @@ text-align: center;
     .section__title:after {
         margin: 20px auto;
     }
+
+    .section::after {
+        width: 300px;
+    }
     
 }
 @media (max-width: 770px) {
+
 
     .header.new {
         width: 25%;
@@ -494,23 +496,9 @@ text-align: center;
     .section {
         padding: 40px 0;
     }
-
-    .about__item {
-        flex: 0 0 auto; /* Элементы не растягиваются и не сжимаются, занимают свою ширину */
-        width: 100%; /* Фиксированная ширина для каждого элемента */
-        max-width: 380px; /* Максимальная ширина элемента */
-        margin-right: 10px; 
-        margin: 0 auto;
-        margin-bottom: 15px;
-        /* Отступ между элементами */
-    }
-
-    .about__img img {
-        width: 100%; /* Устанавливаем ширину изображения в 100% контейнера */
-        height: auto; /* Автоматическая высота для сохранения пропорций */
-    }
 }
 @media (max-width: 575px) {
+
 
     /* Intro */
     .first__subtitle {
@@ -518,7 +506,7 @@ text-align: center;
     }
 
     .first__title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     /* Section */
@@ -537,10 +525,7 @@ text-align: center;
     .section__title:after {
         margin: 20px auto;
     }
-    .about__item
-    {
-        width: 1140px;
-    }
+    
 
     .nav {
         font-size: 10px;

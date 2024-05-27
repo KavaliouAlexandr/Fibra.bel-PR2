@@ -16,27 +16,60 @@ window.addEventListener("scroll", function() {
 }, false);
 
 
-document.querySelector(".contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение формы
+// document.querySelector(".contact-form").addEventListener("submit", async function(event) {
+//     event.preventDefault(); // Предотвращаем стандартное поведение формы
     
+//     const form = this;
+//     const formData = new FormData(form);
+
+//     try {
+//         const response = await fetch(form.action, {
+//             method: form.method,
+//             body: formData
+//         });
+
+//         if (response.ok) {
+//             // Если запрос успешен, сбрасываем форму
+//             form.reset();
+//         } else {
+//             // Если произошла ошибка, обрабатываем её
+//             console.error("Ошибка при отправке формы", response.statusText);
+//         }
+//     } catch (error) {
+//         console.error("Произошла ошибка", error);
+//     }
+// });
+
+document.querySelector(".contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent default form submission
+
     const form = this;
     const formData = new FormData(form);
+    const data = {};
+
+    // Convert FormData to a JSON object
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
 
     try {
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: formData
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
         });
 
         if (response.ok) {
-            // Если запрос успешен, сбрасываем форму
+            // If the request is successful, reset the form
             form.reset();
+            console.log("Form successfully submitted");
         } else {
-            // Если произошла ошибка, обрабатываем её
-            console.error("Ошибка при отправке формы", response.statusText);
+            console.error("Error submitting form", response.statusText);
         }
     } catch (error) {
-        console.error("Произошла ошибка", error);
+        console.error("An error occurred while submitting the form", error);
     }
 });
 

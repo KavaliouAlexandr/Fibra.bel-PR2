@@ -16,27 +16,27 @@ window.addEventListener("scroll", function() {
 }, false);
 
 
-document.querySelector(".contact-form").addEventListener("submit", function(event) {
+document.querySelector(".contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Предотвращаем стандартное поведение формы
     
-    this.reset();
+    const form = this;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData
+        });
+
+        if (response.ok) {
+            // Если запрос успешен, сбрасываем форму
+            form.reset();
+        } else {
+            // Если произошла ошибка, обрабатываем её
+            console.error("Ошибка при отправке формы", response.statusText);
+        }
+    } catch (error) {
+        console.error("Произошла ошибка", error);
+    }
 });
-
-function toggleMenu() {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');
-}
-
-const CryptoJS = require('crypto-js');
-
-// Ваш токен от Web3Forms
-const token = "f82c6329-b6b3-40be-8c6b-087136429e11";
-
-// Ключ для шифрования (может быть любая строка)
-const encryptionKey = "strong_random_key_here";
-
-// Шифруем токен с использованием AES
-const encryptedToken = CryptoJS.AES.encrypt(token, encryptionKey).toString();
-
-// Теперь вы можете отправить encryptedToken на сервер
-
 

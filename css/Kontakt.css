@@ -379,6 +379,11 @@ padding-bottom: 30px;
 }
 
 @media screen and (max-width: 980px){
+
+  .section__title {
+    font-size: 5.2vw;
+  }
+
   .contact-page{
    flex: 100%;
    margin-right: 40px;
